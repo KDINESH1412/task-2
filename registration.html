@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5; /* Light gray background */
+            color: #333; /* Dark gray text color */
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000; /* Black color for heading */
+            font-weight: bold; /* Bold letters */
+            font-family: Algerian, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Specify the font */
+            text-decoration: underline;
+            margin: 20px 0;
+            font-size: 2em; /* Adjust the font size as needed */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+            background-color: #fff; /* White background for tables */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd; /* Light gray border */
+        }
+
+        input[type="text"],
+        input[type="checkbox"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin: 5px 0;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #9933cc; /* Violet background for submit button */
+            color: #fff; /* White text color for submit button */
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #800080; /* Darker violet on hover */
+        }
+
+        /* Styling for checkboxes */
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        /* Styling for labels */
+        label {
+            color: #9933cc; /* Violet color for labels */
+        }
+
+        /* Styling for the page title */
+        p {
+            font-size: 24px;
+            color: #9933cc; /* Violet color for page title */
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <p>Enter the details below</p>
+
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="Name" size="30" required></td>
+        </tr>
+        <tr>
+            <td>Phone Number:</td>
+            <td><input type="text" name="phnumber" length="10" required></td>
+        </tr>
+        <tr>
+            <td>Birthday:</td>
+            <td>
+                <table>
+                    <tr>
+                        <td><input type="text" name="date" length="2" size="2"></td>
+                        <td>
+                            <select name="month" id="month">
+                                <option value="">Select month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- Add more fields as needed -->
+    </table>
+
+    <table>
+        <tr>
+            <td><input type="checkbox" id="nt"></td>
+            <td><label for="nt">Would you like to send notifications to E-mail</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" id="tc"></td>
+            <td><label for="tc">Accepting terms and conditions</label></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

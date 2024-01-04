@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            background-color: #f2f2f2; /* Set a light gray background color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #ffffff; /* Set a white background color for the form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+        }
+
+        h2 {
+            color: #9933cc; /* Set a violet color for the heading */
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333; /* Set a dark gray color for labels */
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #9933cc; /* Set a violet color for the submit button */
+            color: #fff; /* Set white text color for the submit button */
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #800080; /* Darken the violet color on hover */
+        }
+
+        /* Add some spacing to the form */
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post" onsubmit="return validateForm()">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Add your own validation logic here
+            if (username === "" || password === "") {
+                alert("Please enter both username and password");
+                return false;
+            }
+
+            // For educational purposes, the form will submit even if empty.
+            return true;
+        }
+    </script>
+</body>
+
+</html>
